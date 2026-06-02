@@ -1,48 +1,168 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>GW memory</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Gravitational-wave memory</h1>
-  <p style="color:Tomato;">Gravitational-wave memory is a permanent distortion of space-time that accompanies explosive events in astrophysics. 
-    It is particularly strong if a significant part of the system's rest-mass is anisotropically emitted as relativistic radiation. The only knwown 
- situation where the memory is potentially detectable, is a merger of two black holes, during which several percent of their rest mass leaves the system 
-    anisotropically. 
-    <a href="https://www.montclair.edu/profilepages/view_profile.php?username=favatam">Mark Favata</a> in 2009 showed that the 
-    memory will likely be detactable by 
-    <a href="https://en.wikipedia.org/wiki/Laser_Interferometer_Space_Antenna">LISA</a>. I worked on exploring other options, i.e. 
-    GW the memory detetion by Pulsar Timing Arrays (work with 
-    <a href="https://www.aei.mpg.de/person/23824/2784"> Rutger van Haasteren </a>) and 
-      by LIGO (with 
-    <a href="https://research.monash.edu/en/persons/paul-lasky">Paul Lasky</a>, 
-    <a href="https://users.monash.edu.au/~erict/">Eric Thrane</a>,
-    <a href="https://www.linkedin.com/in/jonathan-blackman-06b1177a/"> Jonathan Blackman</a>, and 
-    <a href="http://www.tapir.caltech.edu/~yanbei/">Yanbei Chen</a>). The predictions are not as promising as those for LISA, but present
-    a considerable methodological interest. Hence the considerable number of citations to the papers below: 
-   </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitational-wave memory | Yuri Levin</title>
+    <style>
+        :root {
+            --bg-main: #f7f4fc;         /* Bright, clean lavender-ivory background */
+            --bg-card: #ffffff;         /* Pure white content blocks */
+            --text-main: #2e1d2b;       /* Deep plum-charcoal text for crisp reading */
+            --accent-pink: #db2777;     /* Bright magenta-pink */
+            --accent-purple: #7c3aed;   /* Vibrant electric purple for secondary links */
+            --border-color: #ebdff5;    /* Soft pastel lavender border lines */
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px 60px 20px; 
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
+            color: var(--text-main); 
+            background-color: var(--bg-main); 
+            line-height: 1.65; 
+        }
+        .navigation {
+            margin-bottom: 30px;
+        }
+        .nav-back {
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95em;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .nav-back:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h1 { 
+            margin: 0 0 10px 0; 
+            font-size: 2.5em; 
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+            display: inline-block;
+            border-bottom: 4px solid var(--accent-pink);
+            padding-bottom: 5px;
+        }
+        .intro-box {
+            font-size: 1.2em;
+            color: var(--text-main);
+            margin: 40px 0;
+            text-align: justify;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.02);
+        }
+        .intro-box a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .intro-box a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h2.section-title {
+            color: var(--text-main);
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+        .papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .paper-card { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border-color); 
+            padding: 26px; 
+            border-radius: 12px; 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+            box-shadow: 0 2px 4px rgba(124, 58, 237, 0.02);
+        }
+        .paper-card:hover { 
+            transform: translateY(-3px); 
+            border-color: var(--accent-pink); 
+            box-shadow: 0 12px 20px -8px rgba(124, 58, 237, 0.12); 
+        }
+        .paper-title {
+            margin: 0 0 12px 0;
+        }
+        .paper-title a { 
+            color: var(--accent-pink); 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2em;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+        .paper-title a:hover {
+            color: var(--accent-purple);
+            text-decoration: underline;
+        }
+        .paper-desc {
+            margin: 0;
+            font-size: 1.05em;
+            color: var(--text-main);
+            text-align: justify;
+        }
+        .paper-desc a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .paper-desc a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-  <p stype="color:Blue;text-align:center;">
+    <div class="navigation">
+        <a href="index.html" class="nav-back">← Back to Homepage</a>
+    </div>
 
-  <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.401.2372V/abstract?bbbRedirect=1"> Gravitational-wave memory and pulsar timing arrays.</a>  This paper 
-  argues that the memomry from mergers of supermassive black holes is in principle detectable by PTAs, however the expected rate is very small (perhaps one will
-  need to time pulsars for several generations before this will be possible). Similar work was simultaneously and independently done by 
-    <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.402..417P/abstract">Maxim Pshirkov, D. Baskaran, and Konstantin (Kostya) Postnov</a> and by <a href="https://ui.adsabs.harvard.edu/abs/2009MNRAS.400L..38S/abstract">Naoki Seto</a>. <br>
-    The methodological interest in our paper is that it presents, for the first time, the time-domain Wiener-Filter formalism as 
-  applied to PTAs. The peculiarity of this situation is that one needs to deal with the corrections to the pulsar timing residuals due to variations 
-    in the pulsar timing-model parameters. </p>
+    <h1>Gravitational-wave memory</h1>
 
-   <p stype="color:Blue;text-align:center;">
+    <div class="intro-box">
+        Gravitational-wave memory is a permanent distortion of space-time that accompanies explosive events in astrophysics. It is particularly strong if a significant part of the system's rest-mass is anisotropically emitted as relativistic radiation. The only known situation where the memory is potentially detectable, is a merger of two black holes, during which several percent of their rest mass leaves the system anisotropically. <a href="https://www.montclair.edu/profilepages/view_profile.php?username=favatam" target="_blank">Mark Favata</a> in 2009 showed that the memory will likely be detectable by <a href="https://en.wikipedia.org/wiki/Laser_Interferometer_Space_Antenna" target="_blank">LISA</a>. I worked on exploring other options, i.e. GW the memory detection by Pulsar Timing Arrays (work with <a href="https://www.aei.mpg.de/person/23824/2784" target="_blank">Rutger van Haasteren</a>) and by LIGO (with <a href="https://research.monash.edu/en/persons/paul-lasky" target="_blank">Paul Lasky</a>, <a href="https://users.monash.edu.au/~erict/" target="_blank">Eric Thrane</a>, <a href="https://www.linkedin.com/in/jonathan-blackman-06b1177a/" target="_blank">Jonathan Blackman</a>, and <a href="http://www.tapir.caltech.edu/~yanbei/" target="_blank">Yanbei Chen</a>). The predictions are not as promising as those for LISA, but present a considerable methodological interest. Hence the considerable number of citations to the papers below:
+    </div>
 
-  <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.117f1102L/abstract"> 
-    Detecting Gravitational-Wave Memory with LIGO: Implications of GW150914.</a>  This paper 
-  argues that the memomry from mergers of stellar-mass black holes is potentially detectable by LIGO. However, the memory signal from a sinlge merger is
-     too weak to be detectable, and
-     one needs collective evidence from many strong mergers to prove the existence of memory. Like with PTAs, one needs a lot of time
-     and patience. Therefore my personal bet is
-     that LISA will be the first instrument to see Gravitational-Wave memory, despite its planned launch in the now-distant 2034.
-     </p>
+    <h2 class="section-title">Selected Publications</h2>
+    
+    <div class="papers-list">
+        
+        <!-- Paper 1 -->
+        <div class="paper-card">
+            <p class="paper-title">
+                <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.401.2372V/abstract?bbbRedirect=1" target="_blank">Gravitational-wave memory and pulsar timing arrays</a>
+            </p>
+            <p class="paper-desc">
+                This paper argues that the memory from mergers of supermassive black holes is in principle detectable by PTAs, however the expected rate is very small (perhaps one will need to time pulsars for several generations before this will be possible). Similar work was simultaneously and independently done by <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.402..417P/abstract" target="_blank">Maxim Pshirkov, D. Baskaran, and Konstantin (Kostya) Postnov</a> and by <a href="https://ui.adsabs.harvard.edu/abs/2009MNRAS.400L..38S/abstract" target="_blank">Naoki Seto</a>.
+                <br><br>
+                The methodological interest in our paper is that it presents, for the first time, the time-domain Wiener-Filter formalism as applied to PTAs. The peculiarity of this situation is that one needs to deal with the corrections to the pulsar timing residuals due to variations in the pulsar timing-model parameters.
+            </p>
+        </div>
+        
+        <!-- Paper 2 -->
+        <div class="paper-card">
+            <p class="paper-title">
+                <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.117f1102L/abstract" target="_blank">Detecting Gravitational-Wave Memory with LIGO: Implications of GW150914</a>
+            </p>
+            <p class="paper-desc">
+                This paper argues that the memory from mergers of stellar-mass black holes is potentially detectable by LIGO. However, the memory signal from a single merger is too weak to be detectable, and one needs collective evidence from many strong mergers to prove the existence of memory. Like with PTAs, one needs a lot of time and patience. Therefore my personal bet is that LISA will be the first instrument to see Gravitational-Wave memory, despite its planned launch in the now-distant 2034.
+            </p>
+        </div>
 
-  
-</BODY>
-</HTML>
+    </div>
+
+</body>
+</html>
