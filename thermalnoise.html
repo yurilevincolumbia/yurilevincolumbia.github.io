@@ -1,38 +1,170 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>Thermal Noise</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Thermal noise</h1>
-  <p style="color:Tomato;">During my PhD, I developed a direct approach to calculating thermo-mechanical 
-    noise in LIGO interferometers:</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Noise | Yuri Levin</title>
+    <style>
+        :root {
+            --bg-main: #f7f4fc;         /* Bright, clean lavender-ivory background */
+            --bg-card: #ffffff;         /* Pure white content blocks */
+            --text-main: #2e1d2b;       /* Deep plum-charcoal text for crisp reading */
+            --accent-pink: #db2777;     /* Bright magenta-pink */
+            --accent-purple: #7c3aed;   /* Vibrant electric purple for links */
+            --border-color: #ebdff5;    /* Soft pastel lavender border lines */
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px 60px 20px; 
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
+            color: var(--text-main); 
+            background-color: var(--bg-main); 
+            line-height: 1.7; 
+        }
+        .navigation {
+            margin-bottom: 30px;
+        }
+        .nav-back {
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95em;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-back:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h1 { 
+            margin: 0 0 30px 0; 
+            font-size: 2.5em; 
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+            display: inline-block;
+            border-bottom: 4px solid var(--accent-pink);
+            padding-bottom: 5px;
+        }
+        .content-container {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.02);
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 1.15em;
+            margin: 0 0 25px 0;
+            text-align: justify;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h2.section-title {
+            color: var(--text-main);
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-weight: normal;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .paper-card { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border-color); 
+            padding: 24px; 
+            border-radius: 12px; 
+            transition: all 0.25s ease; 
+        }
+        .paper-card:hover { 
+            transform: translateY(-3px); 
+            border-color: var(--accent-pink); 
+            box-shadow: 0 12px 20px -8px rgba(124, 58, 237, 0.12); 
+        }
+        .paper-card a { 
+            color: var(--accent-pink); 
+            font-size: 1.15em;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .paper-card a:hover {
+            color: var(--accent-purple);
+            text-decoration: underline;
+        }
+        .paper-note {
+            margin-top: 8px;
+            font-size: 0.95em;
+            color: #555;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+    </style>
+</head>
+<body>
 
-  <p style="color:Blue;text-align:center;">
-<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&cstart=20&pagesize=80&citation_for_view=_zkAFbEAAAAJ:maZDTaKrznsC">
-Internal thermal noise in the LIGO test masses: A direct approach</a></p>
+    <div class="navigation">
+        <a href="index.html" class="nav-back">← Back to Homepage</a>
+    </div>
 
-  <p style="color:Tomato;">The method is computationally cheap, has significant conceptual advantages, and is widely used inside and 
-    outside LIGO community. I pointed out that coatings might be
-  the source of noise that people could have missed. This turned out indeed to be the case, and the coating thermal noise is among
-    the dominant sources
-    of noise in many optomechanical experiments. Research on how to reduce it is an 
-  active field in precision measurements.</p>
+    <h1>Thermal noise</h1>
 
-<p style="color:tomato;text-align:center;"> I have also developed a simple method to compute thermo-refractive noise; this is increasingly 
-  being used in a number of photonics applications, as devices become increasingly thermal-noise limited:</p>
-  <p style="color:blue;text-align:center;"><a  
-href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&cstart=100&pagesize=100&citation_for_view=_zkAFbEAAAAJ:hqOjcs7Dif8C
-">Fluctuation–dissipation theorem for thermo-refractive noise</a></p>
+    <div class="content-container">
+        <p>
+            During my PhD, I developed a direct approach to calculating thermo-mechanical noise in LIGO interferometers. 
+            The method is computationally cheap, has significant conceptual advantages, and is widely used inside and outside the LIGO community. 
+            I pointed out that coatings might be the source of noise that people could have missed. 
+            This turned out indeed to be the case, and the coating thermal noise is among the dominant sources of noise in many optomechanical experiments. 
+            Research on how to reduce it is an active field in precision measurements.
+        </p>
 
- <p style="color:tomato;text-align:center;"> One of the first applications of this formalism was to compute thermo-refractive noise in the beamsplitter 
-   of GEO600 gravitational-wave interferometer (at the time, there were questions whether the "mystery noise" had thermo-refractive origin). This was 
-   the masters thesis project of <a href="https://www.linkedin.com/in/bruin-benthem-41323040/?originalSubdomain=nl">Bruin Benthem:</a></p>
-   
-<p style="color:blue;text-align:center;"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.80.062004">
-   Thermorefractive and thermochemical noise in the beamsplitter of the GEO600 gravitational-wave interferometer</a></p>
+        <p>
+            I have also developed a simple method to compute thermo-refractive noise; this is increasingly being used in a number of photonics applications, as devices become increasingly thermal-noise limited. 
+            One of the first applications of this formalism was to compute thermo-refractive noise in the beamsplitter of the GEO600 gravitational-wave interferometer (at the time, there were questions whether the "mystery noise" had thermo-refractive origin). 
+            This was the masters thesis project of <a href="https://www.linkedin.com/in/bruin-benthem-41323040/?originalSubdomain=nl" target="_blank">Bruin Benthem</a>.
+        </p>
+    </div>
 
-  
-  
-</BODY>
-</HTML>
+    <h2 class="section-title">Selected Publications</h2>
+    
+    <div class="papers-list">
+        <!-- Paper 1 -->
+        <div class="paper-card">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&cstart=20&pagesize=80&citation_for_view=_zkAFbEAAAAJ:maZDTaKrznsC" target="_blank">
+                Internal thermal noise in the LIGO test masses: A direct approach
+            </a>
+        </div>
+        
+        <!-- Paper 2 -->
+        <div class="paper-card">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&cstart=100&pagesize=100&citation_for_view=_zkAFbEAAAAJ:hqOjcs7Dif8C" target="_blank">
+                Fluctuation–dissipation theorem for thermo-refractive noise
+            </a>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="paper-card">
+            <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.80.062004" target="_blank">
+                Thermorefractive and thermochemical noise in the beamsplitter of the GEO600 gravitational-wave interferometer
+            </a>
+            <div class="paper-note">Masters thesis project of Bruin Benthem</div>
+        </div>
+    </div>
+
+</body>
+</html>
