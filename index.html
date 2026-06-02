@@ -7,12 +7,12 @@
     <style>
         :root {
             --bg-main: #fbf9f4;         /* Smooth, warm classic ivory */
-            --bg-header: #281a15;       /* Deep roasted espresso-brown */
+            --bg-header: #2d1b29;       /* Deep obsidian-plum dark header */
             --bg-card: #ffffff;         /* Pure white content modules */
-            --text-main: #2b2623;       /* Midnight charcoal with a hint of warm brown */
+            --text-main: #2b2623;       /* Midnight charcoal typography */
             --text-muted: #6b635f;      /* Soft muted grey-brown for secondary details */
-            --accent-crimson: #8c1d1d;  /* Elegant, deep academic crimson/burgundy */
-            --accent-hover: #b02a2a;    /* Brighter crimson for interactive states */
+            --accent-purple: #6b21a8;   /* Royal Amethyst purple for main topics */
+            --accent-pink-hover: #db2777; /* Vibrant Magenta-Pink for interactive hovering */
             --border-color: #ebdcd0;    /* Warm, soft cream border line */
         }
         body { 
@@ -29,9 +29,9 @@
             color: white; 
             padding: 50px 30px; 
             text-align: center; 
-            border-bottom: 4px solid var(--accent-crimson); 
+            border-bottom: 4px solid var(--accent-purple); 
             margin-bottom: 45px; 
-            box-shadow: 0 4px 10px rgba(40, 26, 21, 0.08);
+            box-shadow: 0 4px 10px rgba(45, 27, 41, 0.08);
         }
         header h1 { 
             margin: 0 0 12px 0; 
@@ -81,8 +81,8 @@
             box-shadow: 0 2px 5px rgba(40, 26, 21, 0.02);
         }
         .papers-banner { 
-            background: #fffcf7; 
-            border-left: 5px solid var(--accent-crimson); 
+            background: #fffbf7; 
+            border-left: 5px solid var(--accent-purple); 
             padding: 24px; 
             border-radius: 6px; 
             margin-bottom: 50px; 
@@ -93,16 +93,16 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.01);
         }
         .papers-banner a { 
-            color: var(--accent-crimson); 
+            color: var(--accent-purple); 
             font-weight: bold; 
             text-decoration: none; 
             font-size: 1.2em;
-            border-bottom: 2px solid var(--accent-crimson);
+            border-bottom: 2px solid var(--accent-purple);
             transition: color 0.2s, border-color 0.2s;
         }
         .papers-banner a:hover {
-            color: var(--accent-hover);
-            border-color: var(--accent-hover);
+            color: var(--accent-pink-hover);
+            border-color: var(--accent-pink-hover);
         }
         .papers-banner p {
             margin: 10px 0 0 0;
@@ -135,11 +135,11 @@
         }
         .research-card:hover { 
             transform: translateY(-4px); 
-            border-color: var(--accent-crimson); 
-            box-shadow: 0 12px 24px -8px rgba(140, 29, 29, 0.12); 
+            border-color: var(--accent-pink-hover); 
+            box-shadow: 0 12px 24px -8px rgba(219, 39, 119, 0.15); 
         }
         .research-card a { 
-            color: var(--accent-crimson); 
+            color: var(--accent-purple); 
             text-decoration: none; 
             font-weight: bold; 
             display: block; 
@@ -147,7 +147,7 @@
             transition: color 0.2s;
         }
         .research-card a:hover {
-            color: var(--accent-hover);
+            color: var(--accent-pink-hover);
             text-decoration: underline;
         }
         @media (max-width: 600px) { 
