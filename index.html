@@ -44,7 +44,7 @@
             flex: 1;
         }
         
-        /* Profile Picture Styling */
+        /* Profile Picture Styling - Kept as a clean circle on the main page */
         .profile-img {
             width: 160px;
             height: 160px;
@@ -80,6 +80,8 @@
             display: flex;
             opacity: 1;
         }
+        
+        /* FIXED: Displays the FULL rectangular photo cleanly when expanded */
         .lightbox-img {
             max-width: 90%;
             max-height: 85vh;
@@ -88,6 +90,7 @@
             transform: scale(0.95);
             transition: transform 0.3s ease-in-out;
             border: 4px solid var(--bg-main);
+            object-fit: contain;     /* Forces the browser to display the uncropped image dimensions */
         }
         .lightbox-overlay.active .lightbox-img {
             transform: scale(1);
@@ -241,7 +244,7 @@
 </head>
 <body>
 
-    <!-- Lightbox overlay linked to your real file string -->
+    <!-- Lightbox overlay configured to completely preserve original image frame dimensions -->
     <div class="lightbox-overlay" id="lightbox" onclick="closeImage()">
         <img src="Yuriphoto.jpg" alt="Yuri Levin Expanded" class="lightbox-img" onclick="event.stopPropagation()">
     </div>
@@ -256,7 +259,6 @@
                 <span>📊 <a href="https://google.com" target="_blank">Google Scholar</a></span>
             </div>
         </div>
-        <!-- Main header path linked to your real file string -->
         <img src="Yuriphoto.jpg" alt="Yuri Levin" class="profile-img" onclick="openImage()" title="Click to view full image">
     </header>
 
@@ -267,6 +269,7 @@
 
         <div class="papers-banner">
             <a href="https://harvard.edu" target="_blank">List of my papers on NASA/ADS</a>
+
             <p>Not published as part of the LIGO Scientific Collaboration</p>
         </div>
 
