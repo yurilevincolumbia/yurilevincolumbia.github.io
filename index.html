@@ -6,13 +6,14 @@
     <title>Yuri Levin | Professor of Physics, Columbia University</title>
     <style>
         :root {
-            --primary-blue: #0046a6;
-            --columbia-blue: #719ECE;
-            --dark-slate: #1a2530;
-            --light-bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #2d3748;
-            --border-color: #e2e8f0;
+            --bg-main: #f4f6f8;         /* Soft, muted off-white background */
+            --bg-header: #1e293b;       /* Elegant dark slate blue */
+            --bg-card: #ffffff;         /* Crisp white for content boxes */
+            --text-main: #334155;       /* Soft dark charcoal for readability */
+            --text-muted: #64748b;      /* Medium grey for less critical text */
+            --accent-teal: #0f766e;     /* Deep, elegant teal for primary buttons/links */
+            --accent-teal-hover: #115e59; /* Slightly darker teal for link hovering */
+            --border-color: #e2e8f0;    /* Soft grey for subtle borders */
         }
         body { 
             max-width: 950px; 
@@ -20,40 +21,49 @@
             padding: 0 0 60px 0; 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             color: var(--text-main); 
-            background-color: var(--light-bg); 
+            background-color: var(--bg-main); 
             line-height: 1.6; 
         }
         header { 
-            background-color: var(--dark-slate); 
+            background-color: var(--bg-header); 
             color: white; 
-            padding: 40px 30px; 
+            padding: 45px 30px; 
             text-align: center; 
-            border-bottom: 5px solid var(--columbia-blue); 
+            border-bottom: 4px solid var(--accent-teal); 
             margin-bottom: 40px; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
         }
         header h1 { 
             margin: 0 0 10px 0; 
-            font-size: 2.3em; 
+            font-size: 2.4em; 
             font-weight: 700;
             letter-spacing: -0.5px;
+            color: #f8fafc;
         }
         header p.title { 
-            margin: 0 0 15px 0; 
+            margin: 0 0 20px 0; 
             color: #cbd5e1; 
-            font-size: 1.2em;
+            font-size: 1.25em;
+            font-weight: 500;
         }
         .meta-info { 
             display: flex; 
             justify-content: center; 
-            gap: 25px; 
+            gap: 30px; 
             font-size: 0.95em; 
             color: #94a3b8; 
             flex-wrap: wrap;
+        }
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         .meta-info a { 
             color: #cbd5e1; 
             text-decoration: none; 
             border-bottom: 1px dashed #cbd5e1;
+            transition: color 0.2s;
         }
         .meta-info a:hover {
             color: white;
@@ -64,36 +74,50 @@
         }
         .intro {
             font-size: 1.15em;
-            color: #334155;
+            color: var(--text-main);
             margin-bottom: 35px;
             text-align: justify;
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
         }
         .papers-banner { 
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); 
-            border-left: 5px solid var(--primary-blue); 
-            padding: 20px; 
+            background: #f0fdfa; /* Ultra-soft teal tint */
+            border-left: 5px solid var(--accent-teal); 
+            padding: 22px; 
             border-radius: 8px; 
             margin-bottom: 45px; 
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
         }
         .papers-banner a { 
-            color: var(--primary-blue); 
-            font-weight: bold; 
-            text-decoration: underline; 
-            font-size: 1.1em;
+            color: var(--accent-teal); 
+            font-weight: 700; 
+            text-decoration: none; 
+            font-size: 1.15em;
+            border-bottom: 2px solid var(--accent-teal);
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .papers-banner a:hover {
+            color: var(--accent-teal-hover);
+            border-color: var(--accent-teal-hover);
         }
         .papers-banner p {
-            margin: 5px 0 0 0;
-            color: #0369a1;
+            margin: 8px 0 0 0;
+            color: var(--text-muted);
             font-size: 0.95em;
         }
         h2.section-title {
-            color: var(--dark-slate);
+            color: var(--bg-header);
             font-size: 1.5em;
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 8px;
             margin-bottom: 25px;
+            font-weight: 600;
         }
         .research-grid { 
             display: grid; 
@@ -101,7 +125,7 @@
             gap: 20px; 
         }
         .research-card { 
-            background: var(--card-bg); 
+            background: var(--bg-card); 
             border: 1px solid var(--border-color); 
             padding: 22px; 
             border-radius: 8px; 
@@ -112,23 +136,25 @@
         }
         .research-card:hover { 
             transform: translateY(-3px); 
-            border-color: var(--columbia-blue); 
-            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.08); 
+            border-color: var(--accent-teal); 
+            box-shadow: 0 10px 20px -5px rgba(15, 118, 110, 0.08); 
         }
         .research-card a { 
-            color: var(--primary-blue); 
+            color: var(--accent-teal); 
             text-decoration: none; 
             font-weight: 600; 
             display: block; 
             width: 100%;
+            transition: color 0.2s;
         }
         .research-card a:hover {
+            color: var(--accent-teal-hover);
             text-decoration: underline;
         }
         @media (max-width: 600px) { 
             .research-grid { grid-template-columns: 1fr; } 
-            header { padding: 30px 15px; }
-            header h1 { font-size: 1.8em; }
+            header { padding: 35px 15px; }
+            header h1 { font-size: 1.9em; }
         }
     </style>
 </head>
