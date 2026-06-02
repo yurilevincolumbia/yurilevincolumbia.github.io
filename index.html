@@ -298,4 +298,23 @@
     </div>
 
 </body>
+    <!-- Interactive Expand/Collapse Control Logic -->
+    <script>
+        function openImage() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('active');
+        }
+
+        function closeImage() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+        }
+
+        // Allow pressing the 'Escape' key on the keyboard to exit full view
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeImage();
+            }
+        });
+    </script>
 </html>
