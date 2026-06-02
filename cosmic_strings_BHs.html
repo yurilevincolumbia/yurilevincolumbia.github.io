@@ -1,46 +1,190 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>Cosmic strings, black holes, and monopoles</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Interaction of cosmic strings and black holes. String-connected binaries of monopoles or black holes.</h1>
-  <p style="color:Tomato;">I have a long-term interest in exploring how classical (i.e., non-quantum) relativistic strings interact with black holes. 
-  With <a href="https://physics.oregonstate.edu/directory/heling-deng">Heling Deng</a>, <a href="https://as.nyu.edu/faculty/andrei-gruzinov.html">
-  Andrei Gruzinov</a>, <a href="https://en.wikipedia.org/wiki/Alexander_Vilenkin">Alex Vilenkin</a>, and 
- <a href="https://www.linkedin.com/in/hengruixing/"> Hengrui Xing</a>, I have studied the dynamics of a string loop captured by a Kerr black hole.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Strings and Black Holes | Yuri Levin</title>
+    <style>
+        :root {
+            --bg-main: #f7f4fc;         /* Bright, clean lavender-ivory background */
+            --bg-card: #ffffff;         /* Pure white content blocks */
+            --text-main: #2e1d2b;       /* Deep plum-charcoal text for crisp reading */
+            --accent-pink: #db2777;     /* Bright magenta-pink */
+            --accent-purple: #7c3aed;   /* Vibrant electric purple for links */
+            --border-color: #ebdff5;    /* Soft pastel lavender border lines */
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px 60px 20px; 
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
+            color: var(--text-main); 
+            background-color: var(--bg-main); 
+            line-height: 1.7; 
+        }
+        .navigation {
+            margin-bottom: 30px;
+        }
+        .nav-back {
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95em;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-back:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h1 { 
+            margin: 0 0 30px 0; 
+            font-size: 2.3em; 
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+            display: inline-block;
+            border-bottom: 4px solid var(--accent-pink);
+            padding-bottom: 5px;
+        }
+        .content-container {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.02);
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 1.15em;
+            margin: 0 0 25px 0;
+            text-align: justify;
+        }
+        a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        h2.section-title {
+            color: var(--text-main);
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-weight: normal;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .paper-card { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border-color); 
+            padding: 26px; 
+            border-radius: 12px; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 2px 4px rgba(124, 58, 237, 0.02);
+        }
+        .paper-card:hover { 
+            transform: translateY(-3px); 
+            border-color: var(--accent-pink); 
+            box-shadow: 0 12px 20px -8px rgba(124, 58, 237, 0.12); 
+        }
+        .paper-title {
+            margin: 0 0 12px 0;
+        }
+        .paper-title a { 
+            color: var(--accent-pink); 
+            font-size: 1.2em;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .paper-title a:hover {
+            color: var(--accent-purple);
+            text-decoration: underline;
+        }
+        .paper-desc {
+            margin: 0;
+            font-size: 1.05em;
+            color: var(--text-main);
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
 
-  <p style="color:Blue;text-align:center;">
- In the first paper (which grew out of Hengrui Xing's undergraduate project, but went well beond its original scope), we created an analytical formalism for the 
-    evolution of the captured loop.  We made extensive use of the results
-    obtained by <a href="https://sites.ualberta.ca/~vfrolov/">Valeri Frolov</a> and his collaborators for asymptotically straight strings interacting with Kerr black holes). 
-    It allowed us to infer many things: the growth of loops by superradiance, their shrinking by horizon friction, and 
-    their ultimate fate. This paper had some very fun mathematical physics. The loop can be represented by
-    a closed "auxiliary" curve in 3-d space which evolves secularly. The evolution of the auxiliary curve has direct connections to
-    the work of mathematicians like <a href="https://en.wikipedia.org/wiki/Richard_S._Hamilton">Richard Hamilton</a>, and 
-    it's geometrical "events", like self-intersections
-    have direct physical significance. I am ridiculously proud of this paper, but it has a major caveat:  
-    it neglected the depletion of the loops through string reconnections and ejections of
-    daughter loops. 
-   This is still an open problem.
-  <a href="https://ui.adsabs.harvard.edu/abs/2021PhRvD.103h3019X/abstract">Spinning black holes as cosmic string factories </a> 
-     </p>
+    <div class="navigation">
+        <a href="index.html" class="nav-back">← Back to Homepage</a>
+    </div>
 
-  <p style="color:Blue;text-align:center;">
- In the second paper, Heling Deng, with considerable technical advise from Andrei Gruzinov, 
-    managed to perform a direct numerical simulation of the loop motion in Kerr spacetime (Alex and I contributed through discussions and cheerleeding). Very importantly,
-    he confirmed that the formalism developed in the previous paper was accurate in its supposed domain of validity, and gave qualitatively reasonable results 
-    even in cases where it was not expected to be accurate. I feel like the two papers together form a good foundation for further exploration of this topic.
-  <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvD.107l3016D/abstract">Simulating cosmic string loop captured by a rotating black hole.
-     </a> 
-     </p>
+    <h1>Interaction of cosmic strings and black holes</h1>
 
-  <p style="color:Blue;text-align:center;">
- Alex, Andrei and I also wrote a paper on the cosmologial scenario where primordial black hoes get incorporated into the string network. 
-    One interesting aspect of this scenario is the production of oscillating objects consisting of several black holes connected and held together by strings.
+    <div class="content-container">
+        <p>
+            I have a long-term interest in exploring how classical (i.e., non-quantum) relativistic strings interact with black holes. 
+            With <a href="https://physics.oregonstate.edu/directory/heling-deng" target="_blank">Heling Deng</a>, 
+            <a href="https://as.nyu.edu/faculty/andrei-gruzinov.html" target="_blank">Andrei Gruzinov</a>, 
+            <a href="https://en.wikipedia.org/wiki/Alexander_Vilenkin" target="_blank">Alex Vilenkin</a>, and 
+            <a href="https://www.linkedin.com/in/hengruixing/" target="_blank">Hengrui Xing</a>, 
+            I have studied the dynamics of a string loop captured by a Kerr black hole.
+        </p>
+    </div>
+
+    <h2 class="section-title">Selected Publications & Commentary</h2>
     
-  <a href="https://ui.adsabs.harvard.edu/abs/2018JCAP...11..008V/abstract">Cosmic Strings and Primordial black holes.
-     </a> 
-     </p>
-</BODY>
-</HTML>
+    <div class="papers-list">
+        
+        <!-- Paper 1 -->
+        <div class="paper-card">
+            <p class="paper-title">
+                <a href="https://ui.adsabs.harvard.edu/abs/2021PhRvD.103h3019X/abstract" target="_blank">
+                    Spinning black holes as cosmic string factories
+                </a>
+            </p>
+            <p class="paper-desc">
+                In this first paper (which grew out of Hengrui Xing's undergraduate project, but went well beyond its original scope), we created an analytical formalism for the evolution of the captured loop. 
+                We made extensive use of the results obtained by <a href="https://sites.ualberta.ca/~vfrolov/" target="_blank">Valeri Frolov</a> and his collaborators for asymptotically straight strings interacting with Kerr black holes. 
+                It allowed us to infer many things: the growth of loops by superradiance, their shrinking by horizon friction, and their ultimate fate. 
+                This paper had some very fun mathematical physics. The loop can be represented by a closed "auxiliary" curve in 3-D space which evolves secularly. 
+                The evolution of the auxiliary curve has direct connections to the work of mathematicians like <a href="https://en.wikipedia.org/wiki/Richard_S._Hamilton" target="_blank">Richard Hamilton</a>, and its geometrical "events", like self-intersections, have direct physical significance. 
+                I am ridiculously proud of this paper, but it has a major caveat: it neglected the depletion of the loops through string reconnections and ejections of daughter loops. This is still an open problem.
+            </p>
+        </div>
+        
+        <!-- Paper 2 -->
+        <div class="paper-card">
+            <p class="paper-title">
+                <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvD.107l3016D/abstract" target="_blank">
+                    Simulating cosmic string loop captured by a rotating black hole
+                </a>
+            </p>
+            <p class="paper-desc">
+                In the second paper, Heling Deng, with considerable technical advice from Andrei Gruzinov, managed to perform a direct numerical simulation of the loop motion in Kerr spacetime (Alex and I contributed through discussions and cheerleading). 
+                Very importantly, he confirmed that the formalism developed in the previous paper was accurate in its supposed domain of validity, and gave qualitatively reasonable results even in cases where it was not expected to be accurate. 
+                I feel like the two papers together form a good foundation for further exploration of this topic.
+            </p>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="paper-card">
+            <p class="paper-title">
+                <a href="https://ui.adsabs.harvard.edu/abs/2018JCAP...11..008V/abstract" target="_blank">
+                    Cosmic Strings and Primordial black holes
+                </a>
+            </p>
+            <p class="paper-desc">
+                Alex, Andrei and I also wrote a paper on the cosmological scenario where primordial black holes get incorporated into the string network. 
+                One interesting aspect of this scenario is the production of oscillating objects consisting of several black holes connected and held together by strings.
+            </p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
