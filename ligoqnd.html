@@ -1,51 +1,117 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>QND in LIGO</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Broad-band QND using optical filters</h1>
-  <p style="color:Tomato;">It has been known since the <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.23.1693">seminal work</a> of 
-    <a href="https://en.wikipedia.org/wiki/Carlton_M._Caves">Carlton Caves</a>, that 
-  squeezed states of light can be used to enhance precision of optical interferometry. 
-    <a href="https://en.wikipedia.org/wiki/W._G._Unruh">Bill Unruh</a>
-  <a href="https://www.researchgate.net/publication/279391935_Quantum_Noise_in_the_Interferometer_Detector">realized</a> 
-    that one can also use it to beat the Standard Quantum Limit (SQL) in gravitational-wave interferometers,
-  and several versions of his idea were further developed before the end of the last millenium. However, one serious issue was 
-  that these ideas were only applicable in the narrow range of frequencies, because of the strong frequency dependence
-  of the mechanical impedance of the free test mass.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QND in LIGO</title>
+    <style>
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px 60px 20px; 
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
+            line-height: 1.7; 
+            background-color: #ffffff;
+        }
+        .navigation {
+            margin-bottom: 30px;
+        }
+        .nav-back {
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95em;
+            color: Blue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-back:hover {
+            text-decoration: underline;
+        }
+        h1 { 
+            margin: 0 0 30px 0; 
+            font-size: 2.5em; 
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            color: Violet;
+            text-align: center;
+        }
+        .content-container {
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 1.15em;
+            margin: 0 0 25px 0;
+            text-align: justify;
+            color: Tomato;
+        }
+        p a {
+            color: Blue;
+            text-decoration: underline;
+        }
+        .papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .paper-card { 
+            padding: 20px;
+            text-align: center;
+        }
+        .paper-card a { 
+            color: Blue;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: underline;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
 
-  <p style="color:Tomato;">At the end of 1990s, <a href="https://en.wikipedia.org/wiki/Kip_Thorne">Kip Thorne</a> became concerned that no practical scheme existed for the Quantum Nondemolition (QND) 
-    measurement in LIGO (QND in the contect of 
-  LIGO means simply beating the Standard Quantum Limit). At the time, I was Kip's PhD studnet, and I spent 
-    part of my PhD trying fruitlessly to come up with such a scheme. There was also a group in Moscow led by 
-    Kip's old friend <a href="https://en.wikipedia.org/wiki/Vladimir_Braginsky">Vladimir Braginsky</a>, the originator of the concepts of
-    SQL and QND. Despite of the nearly-complete destruction of Soviet Physics after the dissolution of the Soviet Union, Braginsky managed
-    to retain some talented young people in his grop, and they carried out interesting research. 
-    Part of the group's research funding came from Caltech and NSF, 
-    and Kip 
-    was instrumental in securing this funding.
-    
-    In 1998, Kip and I travelled to Moscow, and we had extensive discussions with 
-    Vladimir Braginsky, Michael (Misha) Gorodetsky, 
-    Farid Khalili, and Sergei Vyatchanin. Upon returning to Caltech, Kip started a study group, which met regularly and discussed 
-  various quantum-physics issues of potential relevance to LIGO. The meetings were well-attended by Caltech officionados of Quantum Measurements.
-    During one
-  of the meetings, I  reported on Unruh's ideas and explained the difficulties for applying them to broadband measurements. 
-    <a href="https://en.wikipedia.org/wiki/H._Jeff_Kimble">Jeff Kimble</a> 
-  immediately had an idea about input optical filters. Kip, together with <a
-  href="https://www.linkedin.com/in/andrey-matsko-69a02415/">Andrei Matsko</a> and Sergei Vyatchanin,  performed detailed computations.
-  This was the birth of KLMTV:</p>
+    <div class="navigation">
+        <a href="index.html" class="nav-back">← Back to Homepage</a>
+    </div>
 
-  <p style="color:Blue;text-align:center;">
+    <h1>Broad-band QND using optical filters</h1>
 
-  <a 
-  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&pagesize=80&citation_for_view=_zkAFbEAAAAJ:u-x6o8ySG0sC">
-   Conversion of conventional gravitational-wave interferometers into quantum nondemolition interferometers by modifying their input and/or output optics
-  </a></p>
+    <div class="content-container">
+        <p>
+            It has been known since the <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.23.1693" target="_blank">seminal work</a> 
+            of <a href="https://en.wikipedia.org/wiki/Carlton_M._Caves" target="_blank">Carlton Caves</a>, that squeezed states of light can be used to enhance precision of optical interferometry. 
+            <a href="https://en.wikipedia.org/wiki/W._G._Unruh" target="_blank">Bill Unruh</a> 
+            <a href="https://www.researchgate.net/publication/279391935_Quantum_Noise_in_the_Interferometer_Detector" target="_blank">realized</a> that one can also use it to beat the Standard Quantum Limit (SQL) in gravitational-wave interferometers, and several versions of his idea were further developed before the end of the last millennium. 
+            However, one serious issue was that these ideas were only applicable in the narrow range of frequencies, because of the strong frequency dependence of the mechanical impedance of the free test mass.
+        </p>
 
-  <p style="color:Tomato;">The input optical filters have now been built and are being tested in Advanced LIGO. They will allow us to make
-    larger part of the Universe "visible" to LIGO, and will increase the number of events observed by the gravitational-wave astronomers.
-  </p>
-</BODY>
-</HTML>
+        <p>
+            At the end of 1990s, <a href="https://en.wikipedia.org/wiki/Kip_Thorne" target="_blank">Kip Thorne</a> became concerned that no practical scheme existed for the Quantum Nondemolition (QND) measurement in LIGO (QND in the context of LIGO means simply beating the Standard Quantum Limit). 
+            At the time, I was Kip's PhD student, and I spent part of my PhD trying fruitlessly to come up with such a scheme. 
+            There was also a group in Moscow led by Kip's old friend <a href="https://en.wikipedia.org/wiki/Vladimir_Braginsky" target="_blank">Vladimir Braginsky</a>, the originator of the concepts of SQL and QND. 
+            Despite of the nearly-complete destruction of Soviet Physics after the dissolution of the Soviet Union, Braginsky managed to retain some talented young people in his group, and they carried out interesting research. 
+            Part of the group's research funding came from Caltech and NSF, and Kip was instrumental in securing this funding. 
+            In 1998, Kip and I travelled to Moscow, and we had extensive discussions with Vladimir Braginsky, Michael (Misha) Gorodetsky, Farid Khalili, and Sergei Vyatchanin. 
+            Upon returning to Caltech, Kip started a study group, which met regularly and discussed various quantum-physics issues of potential relevance to LIGO. 
+            The meetings were well-attended by Caltech aficionados of Quantum Measurements. 
+            During one of the meetings, I reported on Unruh's ideas and explained the difficulties for applying them to broadband measurements. 
+            <a href="https://en.wikipedia.org/wiki/H._Jeff_Kimble" target="_blank">Jeff Kimble</a> immediately had an idea about input optical filters. 
+            Kip, together with <a href="https://www.linkedin.com/in/andrey-matsko-69a02415/" target="_blank">Andrei Matsko</a> and Sergei Vyatchanin, performed detailed computations. 
+            This was the birth of KLMTV:
+        </p>
+    </div>
+
+    <div class="papers-list">
+        <div class="paper-card">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_zkAFbEAAAAJ&pagesize=80&citation_for_view=_zkAFbEAAAAJ:u-x6o8ySG0sC" target="_blank">Conversion of conventional gravitational-wave interferometers into quantum nondemolition interferometers by modifying their input and/or output optics</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <p>
+            The input optical filters have now been built and are being tested in Advanced LIGO. 
+            They will allow us to make larger part of the Universe "visible" to LIGO, and will increase the number of events observed by the gravitational-wave astronomers.
+        </p>
+    </div>
+
+</body>
+</html>
