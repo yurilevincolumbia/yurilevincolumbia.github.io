@@ -1,49 +1,93 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>Yuri Levin's website</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Yuri Levin's research website</h1>
-  <p style="color:Tomato;">Astrophysics is a huge field. It studies the smallest and the largest objects in the Universe and everything in between. Like many theoretical 
-    astrophysicists, I work on a number of different, sometimes overlapping topics. This website is an attempt to give an overview of my research and 
-    my scientific trajetory</p>
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Levin's Website</title>
+    <!-- Modern, clean styling library -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--button-bg);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .intro {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .papers-link {
+            display: block;
+            text-align: center;
+            background: var(--background-alt);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid var(--border);
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .research-card {
+            background: var(--background-alt);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .research-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .research-card a {
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+    </style>
+</head>
+<body>
 
-  <p style="color:Blue;text-align:center;">
-   
-  <a href="https://ui.adsabs.harvard.edu/user/libraries/Tai4Fz_vQVelCAvVev-yeQ">List of 
-    my papers </a> not published as part of the LIGO Scientific Collaboration </p>
+    <h1>Yuri Levin's Research Website</h1>
 
-  <p> <a href="thermalnoise.html"> Thermal noise in optomechanical experiments</a></p>   
+    <p class="intro">
+        Astrophysics is a huge field. It studies the smallest and the largest objects in the Universe and everything in between. Like many theoretical astrophysicists, I work on a number of different, sometimes overlapping topics. This website is an attempt to give an overview of my research and my scientific trajectory.
+    </p>
 
-  <p><a href="ligoqnd.html"> Broad-band Quantum Nondemolition measurements for LIGO</a></p>
+    <div class="papers-link">
+        🔗 <a href="https://ui.adsabs.harvard.edu/user/libraries/Tai4Fz_vQVelCAvVev-yeQ" target="_blank">List of my papers</a> (not published as part of the LIGO Scientific Collaboration)
+    </div>
 
-  <p><a href="NSseismology.html"> Global oscillation and quakes of neutron stars</a></p>
+    <h2>Research Topics</h2>
+    <div class="research-grid">
+        <div class="research-card"><a href="thermalnoise.html">Thermal noise in optomechanical experiments</a></div>
+        <div class="research-card"><a href="ligoqnd.html">Broad-band Quantum Nondemolition measurements for LIGO</a></div>
+        <div class="research-card"><a href="NSseismology.html">Global oscillation and quakes of neutron stars</a></div>
+        <div class="research-card"><a href="x_ray_bursts.html">Nuclear explosions on neutron stars</a></div>
+        <div class="research-card"><a href="magnetaractivity.html">Magnetar outbursts</a></div>
+        <div class="research-card"><a href="galactic_nuclei.html">Stellar and gas dynamics and gravitational-wave sources in galactic nuclei</a></div>
+        <div class="research-card"><a href="PTA.html">Pulsar Timing Arrays</a></div>
+        <div class="research-card"><a href="oblique_shock.html">Oblique shock breakouts</a></div>
+        <div class="research-card"><a href="pulsar_scintillation.html">Pulsar scintillations</a></div>
+        <div class="research-card"><a href="negative_dyn_friction.html">Negative Dynamical Friction</a></div>
+        <div class="research-card"><a href="GWmemory.html">Gravitational-wave memory</a></div>
+        <div class="research-card"><a href="cosmic_strings_BHs.html">Cosmic strings and black holes</a></div>
+        <div class="research-card"><a href="pulsar_B_field.html">Evolution of pulsar magnetic fields</a></div>
+        <div class="research-card"><a href="vortices_glitches.html">Superfluid vortices and glitches</a></div>
+        <div class="research-card"><a href="accretion_discs.html">Accretion discs</a></div>
+        <div class="research-card"><a href="FRB.html">Fast radio bursts</a></div>
+    </div>
 
-  <p><a href="x_ray_bursts.html"> Nuclear explosions on neutron stars</a></p>
-
-  <p><a href="magnetaractivity.html"> Magnetar outbursts</a></p>
-
-  <p><a href="galactic_nuclei.html"> Stellar and gas dynamics and gravitational-wave sources in galactic nuclei</a></p>
-
-  <p><a href="PTA.html"> Pulsar Timing Arrays</a></p>
-
-  <p><a href="oblique_shock.html"> Oblique shock breakouts</a></p>
-
-  <p><a href="pulsar_scintillation.html"> Pulsar scintillations</a></p>
-
-  <p><a href="negative_dyn_friction.html"> Negative Dynamical Friction</a></p>
-
-  <p><a href="GWmemory.html"> Gravitational-wave memory</a></p>
-
-  <p><a href="cosmic_strings_BHs.html"> Cosmic strings and black holes</a></p>
-
-  <p><a href="pulsar_B_field.html"> Evolution of pulsar magnetic fields</a></p>
-
-  <p><a href="vortices_glitches.html"> Superfluid vortices and glitches</a></p>
-
-  <p><a href="accretion_discs.html"> Accretion discs</a></p>
-
-  <p><a href="FRB.html"> Fast radio bursts</a></p>
-</BODY>
-</HTML>
+</body>
+</html>
