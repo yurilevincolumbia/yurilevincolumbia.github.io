@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamics of Galactic Nuclei | Yuri Levin</title>
+    <title>Type-I X-ray Bursts | Yuri Levin</title>
     <style>
         :root {
             --bg-main: #f7f4fc;         /* Bright, clean lavender-ivory background */
@@ -57,8 +57,33 @@
         }
         p {
             font-size: 1.15em;
-            margin: 0;
+            margin: 0 0 25px 0;
             text-align: justify;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+        .main-paper-link {
+            display: block;
+            margin: 20px 0;
+            padding: 16px;
+            background: #fffcf7;
+            border-left: 4px solid var(--accent-pink);
+            font-weight: bold;
+            border-radius: 0 8px 8px 0;
+        }
+        .main-paper-link a {
+            color: var(--accent-pink);
+            font-size: 1.1em;
         }
         h2.section-title {
             color: var(--text-main);
@@ -107,11 +132,43 @@
         <a href="index.html" class="nav-back">← Back to Homepage</a>
     </div>
 
-    <h1>Dynamics of Galactic Nuclei</h1>
+    <h1>Type-I X-ray bursts</h1>
 
     <div class="content-container">
         <p>
-            I spent half of my life thinking about stellar and gas dynamics of galactic nuclei.
+            Some of the bright x-ray sources in the sky are neutron stars that are accreting gas from much larger companions. 
+            The gas, consisting of Hydrogen and Helium, accumulates in an ocean that covers the surface. 
+            As accretion proceeds, the ocean becomes more massive and the Hydrogen and Helium at the base of the ocean become increasingly compressed. 
+            Once the density at the base reaches about 1 million grams per cubic centimeter (roughly the same as the density at the center of a white dwarf), the ocean ignites and burns up. 
+            This produces a brilliant flare in x-rays and other bands, known as a "Type-I x-ray burst". 
+            Type-I x-ray bursts are routinely observed.
+        </p>
+
+        <p>
+            The rises of the bursts are typically quite short, less than a second. 
+            This means that the nuclear flames, once ignited at some spot on a neutron star surface, propagate around the neutron star on a timescale less than a second. 
+            The flame speeds should be impressively high, between 10 and 100 km/sec! 
+            Together with <a href="https://www.astro.princeton.edu/~anatoly/" target="_blank">Anatoly Spitkovsky</a> and 
+            <a href="https://www.linkedin.com/in/greg-ushomirsky-a87a00/" target="_blank">Greg Ushomirsky</a>, I made a crack at understanding such high flame speeds and their geometry in 2001-2. 
+            Anatoly was a PhD student at Berkeley, working on PIC simulations that would one day make him famous in the Astrophysics world. 
+            He nonetheless found the time to take a lead on this project. 
+            We worked on it closely for about a year. 
+            None of us knew any geophysical fluid dynamics, but we had to learn it rather well to address this problem. 
+            The strongly accreting neutron stars are incredibly fast rotators, and the Coriolis force plays a huge role. 
+            The flames are essentially nuclear hurricanes!
+        </p>
+
+        <div class="main-paper-link">
+            👉 <strong>Featured Publication (SLU):</strong><br>
+            <a href="https://ui.adsabs.harvard.edu/abs/2002ApJ...566.1018S/abstract" target="_blank">Propagation of Thermonuclear Flames on Rapidly Rotating Neutron Stars: Extreme Weather during Type I X-Ray Bursts</a>
+        </div>
+
+        <p>
+            The SLU paper only used two vertical zones, and left many unanswered questions about the details. 
+            Many of these were addressed in <a href="http://www.astroscu.unam.mx/IA/index.php?option=com_content&view=article&id=1009&Itemid=88&lang=es" target="_blank">Yuri Cavecchi's</a> PhD thesis which was co-supervised by <a href="https://staff.fnwi.uva.nl/a.l.watts/" target="_blank">Anna Watts</a> and myself. 
+            The real engine for this research was the <a href="https://ui.adsabs.harvard.edu/abs/2012MNRAS.427.3265B/abstract" target="_blank">magneto-hydrodynamical code</a> that was developed by <a href="https://www.linkedin.com/in/jon-braithwaite-0276771a/?originalSubdomain=de" target="_blank">Jonathan (Jon) Braithwaite</a>. 
+            This code enforced hydrostatic equilibrium in the vertical direction, thus avoiding unnecessary and costly tracking of vertical sound waves. 
+            This allowed Yuri to carry out vertical multizone simulations of propagating flames that clarified many aspects of this process.
         </p>
     </div>
 
@@ -119,59 +176,15 @@
     
     <div class="papers-list">
         <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2003ApJ...590L..33L/abstract" target="_blank">Stellar Disk in the Galactic Center: A Remnant of a Dense Accretion Disk?</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.3526C/abstract" target="_blank">Flame propagation on the surfaces of rapidly rotating neutron stars during Type I X-ray bursts</a>
         </div>
         
         <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2006ApJ...648..405B/abstract" target="_blank">Clockwise Stellar Disk and the Dark Mass in the Galactic Center</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.448..445C/abstract" target="_blank">Rotational effects in thermonuclear type I bursts: equatorial crossing and directionality of flame spreading</a>
         </div>
         
         <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2005ApJ...635..341L/abstract" target="_blank">Intermediate-Mass Black Hole(s) and Stellar Orbits in the Galactic Center</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2006ApJ...653.1203L/abstract" target="_blank">Ejection of High-Velocity Stars from the Galactic Center by an Inspiraling Intermediate-Mass Black Hole</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2003astro.ph..7084L/abstract" target="_blank">Formation of massive stars and black holes in self-gravitating AGN discs, and gravitational waves in LISA band</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2007MNRAS.374..515L/abstract" target="_blank">Starbursts near supermassive black holes: young stars in the Galactic Centre, and gravitational waves in LISA band</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2009ApJ...697L..44M/abstract" target="_blank">A New Secular Instability of Eccentric Stellar Disks around Supermassive Black Holes, with Application to the Galactic Center</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2011ApJ...738...99M/abstract" target="_blank">Secular Stellar Dynamics near a Massive Black Hole</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...784...23M/abstract" target="_blank">On the Origin of the B-stars in the Galactic Center</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...758..103G/abstract" target="_blank">Magnetically Levitating Accretion Disks around Supermassive Black Holes</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...805L...4M/abstract" target="_blank">Double Tidal Disruptions in Galactic Nuclei</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.469.2042B/abstract" target="_blank">Stellar binaries in galactic nuclei: tidally stimulated mergers followed by tidal disruptions</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...905...11G/abstract" target="_blank">The Thermodynamics of Rotating Black Hole Star Clusters</a>
-        </div>
-        
-        <div class="paper-card">
-            <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221112754L/abstract" target="_blank">Resonant friction on discs in galactic nuclei</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.1259C/abstract" target="_blank">Fast and slow magnetic deflagration fronts in type I X-ray bursts</a>
         </div>
     </div>
 
