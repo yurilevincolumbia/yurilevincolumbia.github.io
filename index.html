@@ -3,105 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuri Levin's Website</title>
+    <title>Yuri Levin | Professor of Physics, Columbia University</title>
     <style>
-        /* 100% Self-Contained Clean Styling - Zero External Connections */
-        body {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #333;
-            background-color: #fcfcfc;
-            line-height: 1.6;
+        :root {
+            --primary-blue: #0046a6;
+            --columbia-blue: #719ECE;
+            --dark-slate: #1a2530;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #2d3748;
+            --border-color: #e2e8f0;
         }
-        h1 {
-            text-align: center;
-            color: #111;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
+        body { 
+            max-width: 950px; 
+            margin: 0 auto; 
+            padding: 0 0 60px 0; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            color: var(--text-main); 
+            background-color: var(--light-bg); 
+            line-height: 1.6; 
         }
-        h2 {
-            color: #222;
-            margin-top: 40px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 8px;
+        header { 
+            background-color: var(--dark-slate); 
+            color: white; 
+            padding: 40px 30px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--columbia-blue); 
+            margin-bottom: 40px; 
+        }
+        header h1 { 
+            margin: 0 0 10px 0; 
+            font-size: 2.3em; 
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header p.title { 
+            margin: 0 0 15px 0; 
+            color: #cbd5e1; 
+            font-size: 1.2em;
+        }
+        .meta-info { 
+            display: flex; 
+            justify-content: center; 
+            gap: 25px; 
+            font-size: 0.95em; 
+            color: #94a3b8; 
+            flex-wrap: wrap;
+        }
+        .meta-info a { 
+            color: #cbd5e1; 
+            text-decoration: none; 
+            border-bottom: 1px dashed #cbd5e1;
+        }
+        .meta-info a:hover {
+            color: white;
+            border-bottom-style: solid;
+        }
+        .container { 
+            padding: 0 25px; 
         }
         .intro {
             font-size: 1.15em;
-            color: #444;
-            margin-bottom: 30px;
+            color: #334155;
+            margin-bottom: 35px;
+            text-align: justify;
         }
-        .papers-link {
-            display: block;
+        .papers-banner { 
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); 
+            border-left: 5px solid var(--primary-blue); 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 45px; 
             text-align: center;
-            background: #eef6ff;
-            color: #004499;
-            padding: 15px;
-            border-radius: 6px;
-            border: 1px solid #b3d7ff;
-            margin-bottom: 40px;
-            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-        .papers-link a {
-            color: #0066cc;
-            text-decoration: underline;
+        .papers-banner a { 
+            color: var(--primary-blue); 
+            font-weight: bold; 
+            text-decoration: underline; 
+            font-size: 1.1em;
         }
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+        .papers-banner p {
+            margin: 5px 0 0 0;
+            color: #0369a1;
+            font-size: 0.95em;
         }
-        .research-card {
-            background: #fff;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            padding: 16px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        h2.section-title {
+            color: var(--dark-slate);
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 25px;
         }
-        .research-card a {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: 500;
-            display: block;
+        .research-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); 
+            gap: 20px; 
+        }
+        .research-card { 
+            background: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            padding: 22px; 
+            border-radius: 8px; 
+            transition: all 0.2s ease-in-out; 
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .research-card:hover { 
+            transform: translateY(-3px); 
+            border-color: var(--columbia-blue); 
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.08); 
+        }
+        .research-card a { 
+            color: var(--primary-blue); 
+            text-decoration: none; 
+            font-weight: 600; 
+            display: block; 
+            width: 100%;
         }
         .research-card a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 600px) { 
+            .research-grid { grid-template-columns: 1fr; } 
+            header { padding: 30px 15px; }
+            header h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
 
-    <h1>Yuri Levin's Research Website</h1>
+    <header>
+        <h1>Yuri Levin</h1>
+        <p class="title">Professor of Physics | Columbia University</p>
+        <div class="meta-info">
+            <span>📍 805 Pupin Hall</span>
+            <span>✉️ <a href="mailto:yl3470@columbia.edu">yl3470@columbia.edu</a></span>
+            <span>📊 <a href="https://google.com" target="_blank">Google Scholar</a></span>
+        </div>
+    </header>
 
-    <p class="intro">
-        Astrophysics is a huge field. It studies the smallest and the largest objects in the Universe and everything in between. Like many theoretical astrophysicists, I work on a number of different, sometimes overlapping topics. This website is an attempt to give an overview of my research and my scientific trajectory.
-    </p>
+    <div class="container">
+        <p class="intro">
+            Astrophysics is a huge field. It studies the smallest and the largest objects in the Universe and everything in between. Like many theoretical astrophysicists, I work on a number of different, sometimes overlapping topics. This website is an attempt to give an overview of my research and my scientific trajectory.
+        </p>
 
-    <div class="papers-link">
-        🔗 <a href="https://harvard.edu" target="_blank">List of my papers</a> (not published as part of the LIGO Scientific Collaboration)
-    </div>
+        <div class="papers-banner">
+            <a href="https://harvard.edu" target="_blank">List of my papers</a>
+            <p>Not published as part of the LIGO Scientific Collaboration</p>
+        </div>
 
-    <h2>Research Topics</h2>
-    <div class="research-grid">
-        <div class="research-card"><a href="thermalnoise.html">Thermal noise in optomechanical experiments</a></div>
-        <div class="research-card"><a href="ligoqnd.html">Broad-band Quantum Nondemolition measurements for LIGO</a></div>
-        <div class="research-card"><a href="NSseismology.html">Global oscillation and quakes of neutron stars</a></div>
-        <div class="research-card"><a href="x_ray_bursts.html">Nuclear explosions on neutron stars</a></div>
-        <div class="research-card"><a href="magnetaractivity.html">Magnetar outbursts</a></div>
-        <div class="research-card"><a href="galactic_nuclei.html">Stellar and gas dynamics and gravitational-wave sources in galactic nuclei</a></div>
-        <div class="research-card"><a href="PTA.html">Pulsar Timing Arrays</a></div>
-        <div class="research-card"><a href="oblique_shock.html">Oblique shock breakouts</a></div>
-        <div class="research-card"><a href="pulsar_scintillation.html">Pulsar scintillations</a></div>
-        <div class="research-card"><a href="negative_dyn_friction.html">Negative Dynamical Friction</a></div>
-        <div class="research-card"><a href="GWmemory.html">Gravitational-wave memory</a></div>
-        <div class="research-card"><a href="cosmic_strings_BHs.html">Cosmic strings and black holes</a></div>
-        <div class="research-card"><a href="pulsar_B_field.html">Evolution of pulsar magnetic fields</a></div>
-        <div class="research-card"><a href="vortices_glitches.html">Superfluid vortices and glitches</a></div>
-        <div class="research-card"><a href="accretion_discs.html">Accretion discs</a></div>
-        <div class="research-card"><a href="FRB.html">Fast radio bursts</a></div>
+        <h2 class="section-title">Research Topics</h2>
+        
+        <div class="research-grid">
+            <div class="research-card"><a href="thermalnoise.html">Thermal noise in optomechanical experiments</a></div>
+            <div class="research-card"><a href="ligoqnd.html">Broad-band Quantum Nondemolition measurements for LIGO</a></div>
+            <div class="research-card"><a href="NSseismology.html">Global oscillation and quakes of neutron stars</a></div>
+            <div class="research-card"><a href="x_ray_bursts.html">Nuclear explosions on neutron stars</a></div>
+            <div class="research-card"><a href="magnetaractivity.html">Magnetar outbursts</a></div>
+            <div class="research-card"><a href="galactic_nuclei.html">Stellar and gas dynamics and gravitational-wave sources in galactic nuclei</a></div>
+            <div class="research-card"><a href="PTA.html">Pulsar Timing Arrays</a></div>
+            <div class="research-card"><a href="oblique_shock.html">Oblique shock breakouts</a></div>
+            <div class="research-card"><a href="pulsar_scintillation.html">Pulsar scintillations</a></div>
+            <div class="research-card"><a href="negative_dyn_friction.html">Negative Dynamical Friction</a></div>
+            <div class="research-card"><a href="GWmemory.html">Gravitational-wave memory</a></div>
+            <div class="research-card"><a href="cosmic_strings_BHs.html">Cosmic strings and black holes</a></div>
+            <div class="research-card"><a href="pulsar_B_field.html">Evolution of pulsar magnetic fields</a></div>
+            <div class="research-card"><a href="vortices_glitches.html">Superfluid vortices and glitches</a></div>
+            <div class="research-card"><a href="accretion_discs.html">Accretion discs</a></div>
+            <div class="research-card"><a href="FRB.html">Fast radio bursts</a></div>
+        </div>
     </div>
 
 </body>
