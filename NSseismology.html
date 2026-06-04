@@ -1,100 +1,135 @@
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html">
-<TITLE>Neutron star seismology</TITLE>
-</HEAD>
-<BODY>
-<h1 style="color:Violet;text-align:center;">Neutron star seismology</h1>
-  <p style="color:Tomato;">Vibrational modes of the Earth and the Sun are routinely measured and provide a wealth of information about their
-  internal structure. Observing a vibrational mode of a neutron star woud provide information about its interiors, and
-    this is one of the holy grails of neutron star astrophysics. I have worked on the theory of two types of vibrational modes.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron Star Seismology</title>
+    <style>
+        /* Base Page Styles */
+        body {
+            background-color: #0d0f14;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Centered Content Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #161b22;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 1px solid #30363d;
+        }
+
+        /* Typography */
+        h1 {
+            color: #d19a66;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #ff79c6, #bd93f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #e6edf3;
+        }
+
+        /* Links */
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+            border-bottom: 1px dashed #58a6ff;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #8bbae8;
+            border-bottom: 1px solid #8bbae8;
+            background-color: rgba(88, 166, 255, 0.1);
+        }
+
+        /* Publication Cards */
+        .paper-link {
+            display: block;
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .paper-link a {
+            color: #ff79c6;
+            border-bottom: none;
+            font-size: 1.1rem;
+        }
+
+        .paper-link a:hover {
+            color: #ff92df;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Neutron Star Seismology</h1>
     
-    <p style="color:Tomato;">1. The r-modes were first descussed in Section 3 of 
-      <a href="https://ui.adsabs.harvard.edu/abs/1978MNRAS.182..423P/abstract">
-    this paper by Papaloizou and Pringle.</a> The restoring ingredient for these modes comes mainly from the Coriolis force. Twenty years later, 
-    <a href="https://www.southampton.ac.uk/people/5wy7j9/professor-nils-andersson">Nils Andersson</a> <a href="https://ui.adsabs.harvard.edu/abs/1998ApJ...502..708A/abstract">
-      realized</a> that, because of their coupling
-    to gravitational radiation, the r-modes in rapidly rotating neutron stars could be unstable to the 
-      <a href="https://ui.adsabs.harvard.edu/abs/1978ApJ...222..281F/abstract">Chadrasekhar-Friedman-Schutz (CFS) instability</a>. Almost immediately,
-      <a href="https://ui.adsabs.harvard.edu/abs/1998PhRvL..80.4843L/abstract">Lee Lindblom, Ben Owen, and Sharon Morsink</a> showed that
-        the main coupling to gravitational radiation was via the magnetic quadrupole moment, and the growth of the modes could be quite rapid.
-        This was shortly confirmed by an independent calculation of <a href="https://ui.adsabs.harvard.edu/abs/1999ApJ...510..846A/abstract">
-          Nils Andersson, Kostas Kokkotas and Bernard Schutz</a>. The r-mode craze was on!
-      I was at Caltech and learned about <a href="https://www.depts.ttu.edu/phas/People/Faculty/bio_owen/bio_owen.php">Ben Owen's</a> results 
-      early; he was a fellow PhD student in Kip's group
-      at the same time (as an aside, <a href="https://en.wikipedia.org/wiki/Bernard_F._Schutz">Bernard Schutz</a> 
-      was Kip's PhD  student many years previously, and the term "CFS instability" is of Kip's
-      coinage). I also TA'd <a href="https://pma.caltech.edu/people/e-s-sterl-phinney">Sterl Phinney's</a> astrophysics class and 
-      I knew from him that
-      the heat capacity of neutron stars was very, very low. Thus thermal effects in the r-mode evolution could be very important.
-      The idea for the r-mode driven thermal-runaway cycle in accreting neutron star systems was borne almost instantly, but it took me 
-      over 1/2 year to write up these results. Kip helped a lot to clean up my writing, without taking any 
-      credit for its contents. This was my first paper in main-stream astrophysics:</p>
-      <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/1999ApJ...517..328L/abstract"> Runaway Heating 
-     by R-Modes of Neutron Stars in Low-Mass X-Ray Binaries</a> </p>
- <p style="color:tomato;"> One day after this paper was posted on the arxiv, an <a href="https://ui.adsabs.harvard.edu/abs/1999A%26A...341L...1S/abstract"> 
-    independent study</a> with similar idea was posted by 
-    <a href="https://www.mpa-garching.mpg.de/person/44080/2377">Henk Spruit.</a> Henk was not focused on the cyclic
-  spin evolution or existence of
-  stable points in the temperature-spin plane. Instead he was thinking that the r-mode runaway could lead to
-  the field buoyancy and ultimately lead to a gamma-ray burst. </p>
-
-  <p style="color:tomato">
-        Hundreds(?) of papers have been written on r-mode instability in neutron stars since, but its astrophysical significance is not
-    totally clear (and in fact the large number of papers is not helping). Importantly, in a series of studies (e.g., 
-    <a href="https://ui.adsabs.harvard.edu/abs/2001PhRvD..65b4001S/abstract">Shenk et al. (2001),</a> 
-    <a href="https://ui.adsabs.harvard.edu/abs/2003ApJ...591.1129A/abstract">Arras et al. (2003), </a>
-    <a href="https://ui.adsabs.harvard.edu/abs/2004PhRvD..70l1501B/abstract">Brink et al. (2004),</a>
-    <a href="https://ui.adsabs.harvard.edu/abs/2007PhRvD..76f4019B/abstract"> Bondarescu et al. (2007),</a> contributing major parts to the
-    theses of 4 PhD students) 
-    a group at Cornell showed that the r-modes are likely to saturate at very small amplitudes. A caveat for these
-    calculations is that all of them assumed a perfectly fluid star, while real neutron stars have crusts (more about this below).
-    However, my intuition tells me that the overall results are likely to hold up for stars with crusts as well. These findings imply that (a) 
-  r-mode instability does not have any impact on young, rapidly cooling stars as envisaged in all original papers (b) the instability
-  in accreting neutron stars was acting slowly, leading to at best slow runaway cycles and certainly no gamma-ray bursts. Whether the
-  instability could potentially limit the spins of accreting neutron stars in Low-Mass X-ray Binaries and be responsible for
-  setting the spins of millisecond pulsars depends on the details of the rmodes linear damping.</p>
-
-  <p style="color:tomato">The r-mode damping depends on dissipative processes in neutron-star interiors. 
-    <a href="https://ui.adsabs.harvard.edu/abs/2000ApJ...529L..33B/abstract">
-    Lars Bildsten and Greg Ushomirsky</a> showed
-    that the oscillating viscous linear  boundary layer between the crust and the fluid core may be crucial for providing the damping
-    that stabilizes the r-modes. Lars told me that he got the idea by recalling a similar problem in the "Fluid Dynamics" volume of 
-    Landau and Lifshitz! However, their calculations assumed that the crust was perfectly rigid. After some torturous calculations,
-    <a href="https://www.linkedin.com/in/greg-ushomirsky-a87a00/">Greg Ushomirsky</a> and I
-    showed that the latter assumption is incorrect, and that the crust in fact takes a big part in the r-mode motion. As a result of this,
-    the viscous damping rate in
-    the boundary layer was greatly overestimated in the Bildsten-Ushomirsky paper, and it
-    depends very sensitively on the crust's radial structure. 
+    <p>Vibrational modes of the Earth and the Sun are routinely measured and provide a wealth of information about their internal structure. Observing a vibrational mode of a neutron star would provide information about its interiors, and this is one of the holy grails of neutron star astrophysics. I have worked on the theory of two types of vibrational modes.</p>
     
-  </p>
- 
+    <p><strong>1. The r-modes</strong> were first discussed in Section 3 of <a href="https://harvard.edu">this paper by Papaloizou and Pringle.</a> The restoring ingredient for these modes comes mainly from the Coriolis force. Twenty years later, <a href="https://southampton.ac.uk">Nils Andersson</a> <a href="https://harvard.edu">realized</a> that, because of their coupling to gravitational radiation, the r-modes in rapidly rotating neutron stars could be unstable to the <a href="https://harvard.edu">Chandrasekhar-Friedman-Schutz (CFS) instability</a>. Almost immediately, <a href="https://harvard.edu">Lee Lindblom, Ben Owen, and Sharon Morsink</a> showed that the main coupling to gravitational radiation was via the magnetic quadrupole moment, and the growth of the modes could be quite rapid. This was shortly confirmed by an independent calculation of <a href="https://harvard.edu">Nils Andersson, Kostas Kokkotas and Bernard Schutz</a>. The r-mode craze was on!</p>
+    
+    <p>I was at Caltech and learned about <a href="https://ttu.edu">Ben Owen's</a> results early; he was a fellow PhD student in Kip's group at the same time (as an aside, <a href="https://wikipedia.org">Bernard Schutz</a> was Kip's PhD student many years previously, and the term "CFS instability" is of Kip's coinage). I also TA'd <a href="https://caltech.edu">Sterl Phinney's</a> astrophysics class and I knew from him that the heat capacity of neutron stars was very, very low. Thus thermal effects in the r-mode evolution could be very important. The idea for the r-mode driven thermal-runaway cycle in accreting neutron star systems was born almost instantly, but it took me over 1/2 year to write up these results. Kip helped a lot to clean up my writing, without taking any credit for its contents. This was my first paper in main-stream astrophysics:</p>
+    
+    <div class="paper-link">
+        <a href="https://harvard.edu">Runaway Heating by R-Modes of Neutron Stars in Low-Mass X-Ray Binaries</a>
+    </div>
+    
+    <p>One day after this paper was posted on the arXiv, an <a href="https://harvard.edu">independent study</a> with similar idea was posted by <a href="https://mpg.de">Henk Spruit.</a> Henk was not focused on the cyclic spin evolution or existence of stable points in the temperature-spin plane. Instead he was thinking that the r-mode runaway could lead to the field buoyancy and ultimately lead to a gamma-ray burst.</p>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2001MNRAS.324..917L/abstract">Crust-core 
-     coupling and r-mode damping in neutron stars: a toy model </a> </p>
+    <p>Hundreds(?) of papers have been written on r-mode instability in neutron stars since, but its astrophysical significance is not totally clear (and in fact the large number of papers is not helping). Importantly, in a series of studies (e.g., <a href="https://harvard.edu">Shenk et al. (2001),</a> <a href="https://harvard.edu">Arras et al. (2003),</a> <a href="https://harvard.edu">Brink et al. (2004),</a> <a href="https://harvard.edu">Bondarescu et al. (2007),</a> contributing major parts to the theses of 4 PhD students) a group at Cornell showed that the r-modes are likely to saturate at very small amplitudes. A caveat for these calculations is that all of them assumed a perfectly fluid star, while real neutron stars have crusts (more about this below). However, my intuition tells me that the overall results are likely to hold up for stars with crusts as well. These findings imply that (a) r-mode instability does not have any impact on young, rapidly cooling stars as envisaged in all original papers (b) the instability in accreting neutron stars was acting slowly, leading to at best slow runaway cycles and certainly no gamma-ray bursts. Whether the instability could potentially limit the spins of accreting neutron stars in Low-Mass X-ray Binaries and be responsible for setting the spins of millisecond pulsars depends on the details of the r-modes linear damping.</p>
 
-  <p style="color:tomato">Twenty-two years later, the problem remains surprisingly underexplored, despite 100's of publications.
-    I am looking for an interested graduate student to take a look at it again. This could be the time well spent.</p>
+    <p>The r-mode damping depends on dissipative processes in neutron-star interiors. <a href="https://harvard.edu">Lars Bildsten and Greg Ushomirsky</a> showed that the oscillating viscous linear boundary layer between the crust and the fluid core may be crucial for providing the damping that stabilizes the r-modes. Lars told me that he got the idea by recalling a similar problem in the "Fluid Dynamics" volume of Landau and Lifshitz! However, their calculations assumed that the crust was perfectly rigid. After some torturous calculations, <a href="https://linkedin.com">Greg Ushomirsky</a> and I showed that the latter assumption is incorrect, and that the crust in fact takes a big part in the r-mode motion. As a result of this, the viscous damping rate in the boundary layer was greatly overestimated in the Bildsten-Ushomirsky paper, and it depends very sensitively on the crust's radial structure.</p>
+   
+    <div class="paper-link">
+        <a href="https://harvard.edu">Crust-core coupling and r-mode damping in neutron stars: a toy model</a>
+    </div>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2006MNRAS.368L..35L/abstract"> QPOs during 
-     magnetar flares are not driven by mechanical normal modes of the crust</a> </p>
+    <p>Twenty-two years later, the problem remains surprisingly underexplored, despite 100's of publications. I am looking for an interested graduate student to take a look at it again. This could be the time well spent.</p>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2007MNRAS.377..159L/abstract"> On the theory of magnetar QPOs</a> </p>
+    <div class="paper-link">
+        <a href="https://harvard.edu">QPOs during magnetar flares are not driven by mechanical normal modes of the crust</a>
+    </div>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2011MNRAS.410.1036V/abstract">Magnetar oscillations - I. 
-     Strongly coupled dynamics of the crust and the core </a> </p>
+    <div class="paper-link">
+        <a href="https://harvard.edu">On the theory of magnetar QPOs</a>
+    </div>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2012MNRAS.420.3035V/abstract"> 
-     Magnetar oscillations - II. Spectral method</a> </p>
+    <div class="paper-link">
+        <a href="https://harvard.edu">Magnetar oscillations - I. Strongly coupled dynamics of the crust and the core</a>
+    </div>
 
-  <p stype="color:Blue;text-align:center;">
-   <a href="https://ui.adsabs.harvard.edu/abs/2011MNRAS.418..659L/abstract"> 
-   On the excitation of f modes and torsional modes by magnetar giant flares</a> </p>
-</BODY>
-</HTML>
+    <div class="paper-link">
+        <a href="https://harvard.edu">Magnetar oscillations - II. Spectral method</a>
+    </div>
+
+    <div class="paper-link">
+        <a href="https://harvard.edu">On the excitation of f modes and torsional modes by magnetar giant flares</a>
+    </div>
+</div>
+
+</body>
+</html>
+
